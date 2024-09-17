@@ -1,0 +1,9 @@
+@let field = $field();
+@if (field) {
+  <div>
+    <label [for]="field.key">{{ field.label }}</label>
+    <input [formControl]="control" [id]="field.key" [type]="field.controlType" />
+  </div>
+}
+
+{{ control.value }}

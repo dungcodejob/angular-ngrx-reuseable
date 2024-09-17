@@ -1,0 +1,5 @@
+<form [formGroup]="form" (ngSubmit)="onFormSubmit($event)">
+  @for (field of $fields(); track $index) {
+    <apply-form-control [field]="field"></apply-form-control>
+  }
+</form>
