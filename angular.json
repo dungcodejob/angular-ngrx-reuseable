@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular-dynamic-form": {
+    "angular-ngrx-reuseable": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/angular-dynamic-form",
+            "outputPath": "dist/angular-ngrx-reuseable",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": ["zone.js"],
@@ -77,10 +77,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "angular-dynamic-form:build:production"
+              "buildTarget": "angular-ngrx-reuseable:build:production"
             },
             "development": {
-              "buildTarget": "angular-dynamic-form:build:development"
+              "buildTarget": "angular-ngrx-reuseable:build:development"
             }
           },
           "defaultConfiguration": "development"
