@@ -35,6 +35,9 @@ importers:
       '@ngrx/component-store':
         specifier: ^18.0.2
         version: 18.0.2(@angular/core@18.2.6(rxjs@7.8.1)(zone.js@0.14.10))(rxjs@7.8.1)
+      '@ngrx/data':
+        specifier: ^18.0.2
+        version: 18.0.2(@angular/common@18.2.6(@angular/core@18.2.6(rxjs@7.8.1)(zone.js@0.14.10))(rxjs@7.8.1))(@angular/core@18.2.6(rxjs@7.8.1)(zone.js@0.14.10))(@ngrx/effects@18.0.2(@angular/core@18.2.6(rxjs@7.8.1)(zone.js@0.14.10))(@ngrx/store@18.0.2(@angular/core@18.2.6(rxjs@7.8.1)(zone.js@0.14.10))(rxjs@7.8.1))(rxjs@7.8.1))(@ngrx/entity@18.0.2(@angular/core@18.2.6(rxjs@7.8.1)(zone.js@0.14.10))(@ngrx/store@18.0.2(@angular/core@18.2.6(rxjs@7.8.1)(zone.js@0.14.10))(rxjs@7.8.1))(rxjs@7.8.1))(@ngrx/store@18.0.2(@angular/core@18.2.6(rxjs@7.8.1)(zone.js@0.14.10))(rxjs@7.8.1))(rxjs@7.8.1)
       '@ngrx/effects':
         specifier: ^18.0.2
         version: 18.0.2(@angular/core@18.2.6(rxjs@7.8.1)(zone.js@0.14.10))(@ngrx/store@18.0.2(@angular/core@18.2.6(rxjs@7.8.1)(zone.js@0.14.10))(rxjs@7.8.1))(rxjs@7.8.1)
@@ -1508,6 +1511,16 @@ packages:
     resolution: {integrity: sha512-IB7ZKFqjDt4duQbfYqXxAOKf9Si9O1HFodqbNCSgi7gnovK/frf/H429a+lYOyItPcpno3ECom6/1k8pE8fWlg==}
     peerDependencies:
       '@angular/core': ^18.0.0
+      rxjs: ^6.5.3 || ^7.5.0
+
+  '@ngrx/data@18.0.2':
+    resolution: {integrity: sha512-hR6xKErCfgEO8LgW+i3twxsruVerwfJ4hc0uTY268XuUWArAQUpeBdKVZXMnvcbuMpNmW7f4ea+YMkRI4pLfUg==}
+    peerDependencies:
+      '@angular/common': ^18.0.0
+      '@angular/core': ^18.0.0
+      '@ngrx/effects': 18.0.2
+      '@ngrx/entity': 18.0.2
+      '@ngrx/store': 18.0.2
       rxjs: ^6.5.3 || ^7.5.0
 
   '@ngrx/effects@18.0.2':
@@ -6578,6 +6591,16 @@ snapshots:
     dependencies:
       '@angular/core': 18.2.6(rxjs@7.8.1)(zone.js@0.14.10)
       '@ngrx/operators': 18.0.1(rxjs@7.8.1)
+      rxjs: 7.8.1
+      tslib: 2.7.0
+
+  '@ngrx/data@18.0.2(@angular/common@18.2.6(@angular/core@18.2.6(rxjs@7.8.1)(zone.js@0.14.10))(rxjs@7.8.1))(@angular/core@18.2.6(rxjs@7.8.1)(zone.js@0.14.10))(@ngrx/effects@18.0.2(@angular/core@18.2.6(rxjs@7.8.1)(zone.js@0.14.10))(@ngrx/store@18.0.2(@angular/core@18.2.6(rxjs@7.8.1)(zone.js@0.14.10))(rxjs@7.8.1))(rxjs@7.8.1))(@ngrx/entity@18.0.2(@angular/core@18.2.6(rxjs@7.8.1)(zone.js@0.14.10))(@ngrx/store@18.0.2(@angular/core@18.2.6(rxjs@7.8.1)(zone.js@0.14.10))(rxjs@7.8.1))(rxjs@7.8.1))(@ngrx/store@18.0.2(@angular/core@18.2.6(rxjs@7.8.1)(zone.js@0.14.10))(rxjs@7.8.1))(rxjs@7.8.1)':
+    dependencies:
+      '@angular/common': 18.2.6(@angular/core@18.2.6(rxjs@7.8.1)(zone.js@0.14.10))(rxjs@7.8.1)
+      '@angular/core': 18.2.6(rxjs@7.8.1)(zone.js@0.14.10)
+      '@ngrx/effects': 18.0.2(@angular/core@18.2.6(rxjs@7.8.1)(zone.js@0.14.10))(@ngrx/store@18.0.2(@angular/core@18.2.6(rxjs@7.8.1)(zone.js@0.14.10))(rxjs@7.8.1))(rxjs@7.8.1)
+      '@ngrx/entity': 18.0.2(@angular/core@18.2.6(rxjs@7.8.1)(zone.js@0.14.10))(@ngrx/store@18.0.2(@angular/core@18.2.6(rxjs@7.8.1)(zone.js@0.14.10))(rxjs@7.8.1))(rxjs@7.8.1)
+      '@ngrx/store': 18.0.2(@angular/core@18.2.6(rxjs@7.8.1)(zone.js@0.14.10))(rxjs@7.8.1)
       rxjs: 7.8.1
       tslib: 2.7.0
 

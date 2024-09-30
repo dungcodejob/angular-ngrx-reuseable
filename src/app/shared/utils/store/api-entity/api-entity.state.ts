@@ -1,14 +1,20 @@
 import { EntityAdapter, EntityState } from "@ngrx/entity";
 
+export enum ApiStatus {
+  Pending = "pending",
+  Fulfilled = "fulfilled",
+  Failure = "failure",
+  Idle = "idle",
+}
 export interface ApiEntityState<T> extends EntityState<T> {
-  loading: boolean;
+  status: ApiStatus;
   error: any;
 }
 
 export function createApiEntityState<T>(adapter: EntityAdapter<T>): ApiEntityState<T> {
   return {
     ...adapter.getInitialState(),
-    loading: false,
+    status: ApiStatus.Idle,
     error: null,
   };
 }
